@@ -1,0 +1,21 @@
+FROM node:22-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+ARG VITE_RPC_URL
+ARG VITE_TOKEN_ADDRESS
+ARG VITE_FAUCET_ADDRESS
+
+ENV VITE_RPC_URL=$VITE_RPC_URL
+ENV VITE_TOKEN_ADDRESS=$VITE_TOKEN_ADDRESS
+ENV VITE_FAUCET_ADDRESS=$VITE_FAUCET_ADDRESS
+
+RUN npm run build
+
+RUN npm install -g serve
+CMD ["serve", "-s", "dist", "-l", "3000"]
