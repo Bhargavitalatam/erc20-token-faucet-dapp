@@ -1,23 +1,23 @@
 {
   "name": "token-faucet-dapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "ERC20 Token Faucet DApp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikhilcharan-dev/token-faucet-dapp.git"
+    "url": "git+https://github.com/Bhargavitalatam/erc20-token-faucet-dapp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bhargavitalatam",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/nikhilcharan-dev/token-faucet-dapp/issues"
+    "url": "https://github.com/Bhargavitalatam/erc20-token-faucet-dapp/issues"
   },
-  "homepage": "https://github.com/nikhilcharan-dev/token-faucet-dapp#readme",
+  "homepage": "https://github.com/Bhargavitalatam/erc20-token-faucet-dapp#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "@types/node": "^22.19.3",
